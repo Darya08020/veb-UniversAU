@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>They're studing (but first of all how to live)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        .active{
+            background-color: #7ec8d3;
+        }
+        .intro{
+            width: 700px;
+        }
+        td{
+            padding: 10px;
+        }
+        .checkbox-item{
+            display: flex;
+            gap: 8px;
+            cursor: pointer; /*клик по всей строке*/
+        }
+        .checkbox-list{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .checkbox-item input[type="checkbox"]{
+            width: 20px;
+        }
+        .radio-item{
+            width: 30px;
+        }
+        .radio-list{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+    </style>
+</head>
+
+<body>
+<!--menu-->
+<nav class="nav">
+    <ul>
+    <li><a href="index.html" class="active">Главная</a></li>
+    <li><a href="index.html#story">История</a></li>
+    <li><a href="index.html#list">Список персонажей</a></li>
+    <li><a href="index.html#merch">Обратная связь</a></li>
+    <li><a href="index.html#contacts">Авторство</a></li>
+    <li><a href="index.html#project">Проектная часть</a></li>
+    </ul>
+</nav>
+<!--intro-->
+<h2  id="story">История</h2>
+<div class="intro">
+    <p>
+    Этот сайт посвящен альтернативной вселенной, созданной по циклу книг 
+    о Перси Джексоне Рика Риордана. Главные геори цикла - дети богов разных мифологий.
+    В цикле есть серии о греческих, римских, египетских и скандинавских богах.<br>
+    Это огромная вселенная, мироустройство которой позволяет придумывать новых
+    персонажей с разнообразными предысториями.<br>
+    Чеши и Бим, создательницы персонажей на этом сайте, продумали собственную 
+    историю (и не одну..), однако я представлю здесь лишь основных действующих лиц Университетской АУ.
+    </p>
+</div>
+<!--list-->
+<h2  id="list">Список персонажей</h2>
+<ol>
+    <a href="../theo/theo.html"><li>Тео Крейцер</li></a>
+    <a href="../scar/scar.html"><li>Скарлетт Крейцер</li></a>
+    <a href="../mark/mark.html"><li>Марк Ранстром-Сильван</li></a>
+    <a href="../percy/percy.html"><li>Перси Джексон</li></a>
+    <a href="../drew/drew.html"><li>Дрю Танака</li></a>
+</ol>
+
+<!--Обратная связь-->
+<h2 id="merch">Обратная связь</h2>
+<table background="fon.jpg">
+    <tr>
+        <td width="400">
+            <h3 style="color: white">Здесь вы можете поделиться впечатлениями
+                <ul>
+                    <li>Об оригинальной вселенной</li>
+                        <ul>
+                            <li>О книгах</li>
+                            <li>О фильмах</li>
+                            <li>О сериале</li>
+                        </ul>
+                    <li>Об этой аушке</li>
+                    <ul>
+                        <li>О персонажах</li>
+                        <li>Идеи?</li>
+                    </ul>
+                </ul>
+            </h3>
+        </td>
+        <td>
+            <form action="https://www.bing.com/search?" class="contact-form">
+            <div class="checkbox-list">
+                <div class="form-group">
+                <label for="name">Имя или Ник</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Email или Telegram</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email">
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            </div>
+
+            <button type="submit" class="btn primary">Отправить</button>
+            </form>
+        </td>
+    </tr>
+</table>
+<!--contacts-->
+<h2 id="contacts">Авторство</h2>
+<div class="intro">
+<p>Спасибо Чеши и Бим за возможность использовать их персонажей для этого проекта<br></p>
+<p><a href="../theo/theo.jpg" target="_blank"><img src="../theo/theo.jpg" width="40"></a> <a href="https://t.me/bealibixi">Художница арта с Тео</a></p><br>
+<p><a href="../drew/drew.jpg" target="_blank"><img src="../drew/drew.jpg" width="40"></a> <a href="https://x.com/viria13">Художница арта с Дрю</a></p><br>
+<p><a href="../percy/percy.jpg" target="_blank"><img src="../percy/percy.jpg" width="40"></a> <a href="https://x.com/viria13">И она же художница арта с Перси</a></p>
+</div>
+
+<!--Техническая часть-->
+<h3 id="project">Если вам нравятся более подробные формы..</h3>
+ <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" method="post">
+        <ul class="form-list">
+            <input type="hidden" name="form-id" value="registration-form">
+            <li><h4>Фамилия: </h4><input id="lastname" name="lastname" type="text" value="Иванова"></li>
+            <li><h4>Имя: </h4><input id="firstname" name="firstname" type="text" value="Инна"></li>
+            <li><h4>Логин: </h4><input id="log" name="group" type="text" value="111"></li>
+            <li><h4>Пароль: </h4><input id="password" name="password" type="password" placeholder="Введите пароль (6 символов)" minlength="6"></li>
+            <li><h4>Мобильный телефон: </h4><input id="phone" name="phone" type="number" value="89001234567"></li>
+            <li><h4>E-mail: </h4><input id="email" name="email" type="email" value="iinn@example.com"></li>
+            <li><h4>Пол:</h4>
+                <div class="radio-list">
+                    <label class="radio-item">
+                        <input type="radio" name="sex" value="fem">
+                        <p><span>Fem</span></p>
+                    </label> 
+                    <label class="radio-item">
+                        <input type="radio" name="sex" value="male">
+                        <p><span>Male</span></p>
+                    </label> 
+                </div>
+            </li>
+            <li><h4>Знакомы с фандомом?</h4>
+            <div class="checkbox-list">
+                <label class="checkbox-item">
+                    <input type="checkbox" name="book"> 
+                    <p><span>По книгам</span></p>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" name="film"> 
+                    <p><span>По фильмам</span></p>
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" name="show"> 
+                    <p><span>По сериалу</span></p>
+                </label>
+            </div>
+            </li>
+            <li><h4>Дата: </h4><input id="date" name="date" type="date" value="2026-10-21"></li>
+            <li><h4>Готово)</h4></li>
+            <button type="submit" class="btn primary">Отправить</button>
+            <a href="../abc/abc.html">Задача</a>
+        </ul>
+    </form>
+    
+</body>
